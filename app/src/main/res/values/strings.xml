@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Restraunt Spinner</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="max_distance_mi">Max Distance (Mi):</string>
+    <string name="click_the_wheel_to_spin">Click the wheel to Spin</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="permission_message">Please grant location permission so that we can show you better results</string>
+    <string name="permission_title">Location permission</string>
+    <string name="permission_loc_message">Location permission is required to find nearby Restraunts</string>
+    <string name="location_permission_toast">Please provide location permissions from the settings</string>
+
+    <string-array name="distances">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+</resources>

@@ -1,0 +1,120 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="8dp"
+    android:layout_margin="16dp"
+    android:background="@color/background"
+    tools:context="com.app.restrauntspinner.results.ResultsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context="com.app.restrauntspinner.results.ResultsFragment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/attributionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            tools:text="Powered By Foursquare"
+            android:text="Powered By Foursquare"
+            android:textSize="11sp"
+            android:gravity="top"
+            android:drawableRight="@drawable/foursquare_small"/>
+
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/attributionTV"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="22sp"
+            tools:text="Pind Baluchi" />
+
+        <TextView
+            android:id="@+id/ratingTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:drawableLeft="@drawable/star"
+            android:drawablePadding="5dp"
+            tools:text="8.2" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/restrauntIV"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/headerLayout"
+            android:scaleType="centerCrop"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/adddressTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restrauntIV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="G-72, 1st Floor, Outer Circle, Connaught Place (at Baba Kharak Singh Marg)"/>
+
+        <TextView
+            android:id="@+id/reviewTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/adddressTV"
+            android:ellipsize="end"
+            android:textColor="@color/cardview_dark_background"
+            tools:text="Excellent place with good atmosphere and drinks. Excellent place with good atmosphere and drinks. Excellent place with good atmosphere and drinks."/>
+
+        <TextView
+            android:id="@+id/readReviewTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reviewTV"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:text="read more reviews"
+            android:textColor="@android:color/holo_blue_dark"
+            tools:text="read more reviews"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

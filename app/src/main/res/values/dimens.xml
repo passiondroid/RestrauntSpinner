@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btnWidth">180dp</dimen>
+    <dimen name="btnHeight">60dp</dimen>
+    <dimen name="seekbar_thumb_width">25dp</dimen>
+    <dimen name="image_padding">15dp</dimen>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+</resources>

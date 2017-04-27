@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/green</item>
+    </style>
+
+    <style name="greenButtonTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/green</item>
+        <item name="colorButtonNormal">@color/orange</item>
+    </style>
+
+    <style name="whiteButtonTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/white</item>
+        <item name="colorButtonNormal">@color/orange</item>
+    </style>
+
+    <style name="orangeButtonTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/orange</item>
+        <item name="colorButtonNormal">@color/orange</item>
+    </style>
+
+</resources>

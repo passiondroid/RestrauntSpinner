@@ -1,0 +1,97 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.app.restrauntspinner.home.HomeFragment">
+
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:theme="@style/greenButtonTheme"
+        android:id="@+id/breakfastBtn"
+        android:layout_width="@dimen/btnWidth"
+        android:layout_height="@dimen/btnHeight"
+        android:elevation="16dp"
+        android:text="@string/breakfast"
+        android:textAllCaps="false"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:theme="@style/whiteButtonTheme"
+        android:id="@+id/lunchBtn"
+        android:layout_width="@dimen/btnWidth"
+        android:layout_height="@dimen/btnHeight"
+        android:elevation="16dp"
+        android:text="@string/lunch"
+        android:textAllCaps="false"
+        android:textColor="@color/green"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/breakfastBtn"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/dinnerBtn" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:theme="@style/orangeButtonTheme"
+        android:id="@+id/dinnerBtn"
+        android:layout_width="@dimen/btnWidth"
+        android:layout_height="@dimen/btnHeight"
+        android:elevation="16dp"
+        android:text="@string/dinner"
+        android:textAllCaps="false"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Featuring Restraunts from \n Foursquare"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        android:drawableBottom="@drawable/foursquare"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/breakfastBtn" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/image_padding"
+        app:srcCompat="@drawable/spinner_text_image"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+</android.support.constraint.ConstraintLayout>
