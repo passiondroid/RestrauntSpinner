@@ -152,6 +152,7 @@ public class SpinnerFragment extends Fragment implements SpinnerContract.View,
         Intent intent = new Intent(getActivity(), ResultsActivity.class);
         intent.putExtra(Constants.RESPONSE, fourSquareResponse);
         startActivity(intent);
+        getActivity().finish();
     }
 
     @Override
